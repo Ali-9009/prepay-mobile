@@ -30,13 +30,13 @@ export default function CheckComp() {
                 </div>
 
                 {/* Instruction Box */}
-                <div className="mt-8 w-full max-w-[300px] rounded-2xl bg-white shadow-xl py-5 px-4 border border-gray-100">
+                <div className="mt-8 w-full max-w-75 rounded-2xl bg-white shadow-xl py-5 px-4 border border-gray-100">
                     <h3 className="text-xl font-bold text-(--primary-color)">*#06#</h3>
                     <p className="text-xs mt-1 text-gray-600">Your IMEI number will appear on the screen</p>
                 </div>
 
                 {/* IMEI Input Section */}
-                <div className="mt-6 mb-6 w-full max-w-[300px] rounded-2xl bg-[#fff0f7] border border-(--primary-color)/20 p-6 shadow-sm">
+                <div className="mt-6 mb-6 w-full max-w-75 rounded-2xl border border-white/30 bg-white/20 backdrop-blur-xl p-6">
                     <p className="text-[20px] font-bold text-gray-800 uppercase tracking-widest mb-3">CHECK YOUR DEVICE COMPATIBILITY</p>
                     <input 
                         type="text" 
@@ -53,18 +53,24 @@ export default function CheckComp() {
                 </div>
             </section>
 
+            <img
+                src="/assets/bg-e.png"
+                alt=""
+                className="pointer-events-none fixed -bottom-40 left-1/2 z-0 w-130 max-w-xl -translate-x-1/2"
+            />
+
             {/* Bottom Buttons Section */}
-            <div className="mt-auto mb-8 w-full max-w-[300px] z-10">
+            <div className="mt-auto mb-8 w-full max-w-75 z-10">
                 <div className="grid grid-cols-2 gap-3">
                     <button 
                         onClick={() => window.history.back()} 
-                        className="h-10 rounded-full border border-black px-4 text-xs font-semibold flex items-center justify-center gap-2"
+                        className="h-10 rounded-full border border-white text-white px-4 text-xs font-semibold flex items-center justify-center gap-2"
                     >
                         <ArrowLeft className="w-4 h-4" /> Back
                     </button>
                     <Link 
                         to="/plan" 
-                        className="h-10 rounded-full bg-(--primary-color) text-white text-xs font-semibold flex items-center justify-center hover:bg-(--secondary-color)"
+                        className="h-10 rounded-full bg-black text-white text-xs font-semibold flex items-center justify-center hover:bg-(--secondary-color)"
                     >
                         Skip
                     </Link>

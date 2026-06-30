@@ -46,9 +46,16 @@ export default function Info() {
                 </div>
             </section>
 
+
+            <img
+                src="/assets/character.png"
+                alt=""
+                className="fixed bottom-0 left-1/2 max-w-xl w-70 mb-8"
+            />
+
             {/* Fixed Footer */}
             <div className="shrink-0 bg-white border-t border-gray-100 px-6 py-4">
-                <div className="max-w-[300px] mx-auto grid grid-cols-2 gap-3">
+                <div className="max-w-75 mx-auto grid grid-cols-2 gap-3">
                     <button
                         onClick={() => window.history.back()}
                         className="h-10 rounded-full border border-black px-4 text-xs font-semibold flex items-center justify-center gap-2"
@@ -59,7 +66,7 @@ export default function Info() {
 
                     <Link
                         to="/term"
-                        className="h-10 rounded-full bg-[var(--primary-color)] text-white text-xs font-semibold flex items-center justify-center"
+                        className="h-10 rounded-full bg-(--primary-color) text-white text-xs font-semibold flex items-center justify-center"
                     >
                         Next
                     </Link>

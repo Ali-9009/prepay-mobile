@@ -1,4 +1,4 @@
-import { ShoppingBagIcon } from "lucide-react";
+import { ArrowRight, ShoppingBagIcon } from "lucide-react";
 import LanguageSelector from "../components/LanguageSelector";
 import { Link } from "react-router-dom";
 
@@ -38,12 +38,12 @@ export default function StartS() {
             </div>
 
             {/* Buttons */}
-            <div className="relative z-10 mt-10 w-full max-w-[300px] px-4 flex flex-col gap-3">
+            <div className="relative z-10 mt-10 w-full max-w-75 px-4 flex flex-col gap-3">
                 {menuItems.map((item) => (
                     <Link key={item.label} to={item.path} className="block">
-                        <button className="w-full h-10 rounded-full bg-[var(--primary-color)] hover:bg-black duration-300 text-white text-xs font-bold flex items-center justify-between px-5">
+                        <button className="w-full h-10 rounded-full bg-(--primary-color) hover:bg-black duration-300 text-white text-xs font-bold flex items-center justify-between px-5">
                             {item.label}
-                            <span className="text-lg">→</span>
+                            <span className="text-lg"><ArrowRight /></span>
                         </button>
                     </Link>
                 ))}

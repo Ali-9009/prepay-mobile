@@ -23,7 +23,7 @@ export default function Info() {
             </div>
 
             {/* Scrollable Content */}
-            <section className="flex-1 overflow-y-auto px-6">
+            <section className="flex-1 overflow-y-auto px-6 z-9">
                 <div className="pb-4">
                     <h1 className="mt-14 text-2xl font-semibold text-center">
                         Refill Flow
@@ -37,7 +37,7 @@ export default function Info() {
                         <p>Note : Required For SIM Activation & Invoicing</p>
                     </div>
 
-                    <div className="mt-6 space-y-3">
+                    <div className="mt-6 space-y-3 bg-white/20 backdrop-blur-xl">
                         <input
                             type="text"
                             placeholder="Physical SIM"
@@ -111,12 +111,19 @@ export default function Info() {
                 </div>
             </section>
 
+
+            <img
+                src="/assets/bg-e.png"
+                alt=""
+                className="pointer-events-none fixed -bottom-40 left-1/2 w-130 max-w-xl -translate-x-1/2"
+            />
+
             {/* Fixed Footer */}
-            <div className="shrink-0 bg-white border-t border-gray-100 px-6 py-4">
-                <div className="max-w-[300px] mx-auto grid grid-cols-2 gap-3">
+            <div className="shrink-0 px-6 py-4 z-9">
+                <div className="max-w-75 mx-auto grid grid-cols-2 gap-3">
                     <button
                         onClick={() => window.history.back()}
-                        className="h-10 rounded-full border border-black px-4 text-xs font-semibold flex items-center justify-center gap-2"
+                        className="h-10 rounded-full border border-white text-white px-4 text-xs font-semibold flex items-center justify-center gap-2"
                     >
                         <ArrowLeft className="w-4 h-4" />
                         Back
@@ -124,7 +131,7 @@ export default function Info() {
 
                     <Link
                         to="/term"
-                        className="h-10 rounded-full bg-[var(--primary-color)] text-white text-xs font-semibold flex items-center justify-center"
+                        className="h-10 rounded-full bg-black text-white text-xs font-semibold flex items-center justify-center"
                     >
                         Next
                     </Link>
