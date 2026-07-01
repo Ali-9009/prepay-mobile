@@ -49,15 +49,15 @@ export default function Info() {
                             </p>
 
                             <p>
-                                • <strong>AT&T PREPAID Service</strong> Is Subject
-                                To The AT&T Consumer Service Agreement (Agreement)
+                                • <strong>Prepay PREPAID Service</strong> Is Subject
+                                To The Prepay Consumer Service Agreement (Agreement)
                                 located at att.com/ConsumerServiceAgreement.
-                                Activation and/or use of AT&T PREPAID service
+                                Activation and/or use of Prepay PREPAID service
                                 constitutes acceptance of the Agreement, which
                                 includes dispute resolution by binding arbitration.
-                                AT&T PREPAID cards and other account payments are
+                                Prepay PREPAID cards and other account payments are
                                 nontransferable and nonrefundable. See
-                                att.com/broadbandinfo for information on AT&T
+                                att.com/broadbandinfo for information on Prepay
                                 network management practices.
                             </p>
 
