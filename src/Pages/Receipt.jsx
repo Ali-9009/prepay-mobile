@@ -41,7 +41,7 @@ export default function Receipt() {
                 </ReceiptSection>
 
                 <ReceiptSection title="Product Details">
-                    <Row label="Carrier" value="AT & T" />
+                    <Row label="Carrier" value="Prepay" />
                     <Row label="Plan" value="Prepay $35" />
                     <Row label="Activation Date" value="03-03-2026" />
                     <Row label="SIM No." value="1111100000" />
